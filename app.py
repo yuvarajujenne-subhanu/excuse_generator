@@ -48,5 +48,5 @@ def generate():
     excuse=random.choice(excuses[situation])
     return render_template("home.html",situation=situation,excuse=excuse)
     
-
-app.run(debug=True)
+if __name__=="__main__":
+    app.run(debug=True)
